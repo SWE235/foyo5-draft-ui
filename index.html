@@ -1,42 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phitball Draft</title>
+  <title>PHITBALL Draft</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Phitball Logo" class="logo">
-    <div class="menu">&#9776;</div>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo-img">
+      <div class="site-name">PHITBALL</div>
+      <div class="menu">&#9776;</div>
+    </div>
+    <nav class="dropdown">
+      <a href="https://walkina.substack.com">LILGREENBOOK</a>
+      <a href="https://www.ifiwere.xyz">IFIWERELLC</a>
+      <a href="https://www.prime235.ai">GET WELLTHAI</a>
+      <a href="https://www.theSWE.co">SWE@XCHANGE</a>
+      <a href="https://www.stocktu.be">VISIT STOCKTUBE</a>
+    </nav>
   </header>
 
-  <section id="section0" class="zone">
-    <h1>TRILLZONE</h1>
-    <p>Draft your QB from the $1T+ companies. These are the top-tier leaders.</p>
-    <div class="grid">
-      <button>NVDA</button>
-      <button class="red">AAPL</button>
-      <button class="blue">MSFT</button>
-      <button>AMZN</button>
-      <button>GOOG</button>
-      <button>META</button>
-      <button>AVGO</button>
-      <button>BRK.B</button>
-      <button>TSLA</button>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>TRILLZONE</h1>
+      <p>The top $1T+ stocks. Draft your QB first. This is where your Phitball journey begins.</p>
+      <div class="grid">
+        <button>NVDA</button>
+        <button style="background:#ff4444;color:#fff;">AAPL</button>
+        <button style="background:#4444ff;color:#fff;">MSFT</button>
+        <button>AMZN</button>
+        <button>GOOG</button>
+        <button>META</button>
+        <button>AVGO</button>
+        <button>BRK.B</button>
+        <button>TSLA</button>
+      </div>
+    </section>
 
-  <section id="signup">
-    <h2>Sign Up</h2>
-    <p>Continue your draft with Kickers and Defense.</p>
-    <a href="https://buy.stripe.com/5kQ6oGbAP1Lv7hrfKWcMM02" class="signup-btn">Sign Up & Continue</a>
-  </section>
+    <section class="cta-section">
+      <p>After your QB, draft your Kicker (450B-1T) and Defense (235-449B). Then sign up to complete the draft.</p>
+      <a href="https://buy.stripe.com/5kQ6oGbAP1Lv7hrfKWcMM02" class="cta-button">Sign Up & Continue Draft</a>
+    </section>
+
+    <section class="billzone">
+      <h2>Scroll Downfield</h2>
+      <p>Keep scrolling downfield through each 10-yard marker to complete your team draft. From TRILLZONE to BILLZONE, build your dynasty!</p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Phitball</p>
+    <p>&copy; 2025 PHITBALL. All rights reserved.</p>
   </footer>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    const dropdown = document.querySelector('.dropdown');
+    menu.addEventListener('click', () => dropdown.classList.toggle('open'));
+  </script>
 </body>
 </html>

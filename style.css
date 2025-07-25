@@ -6,60 +6,73 @@ body {
   color: white;
 }
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
   background: #000;
+  color: white;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
-.logo {
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.logo-img {
   height: 40px;
 }
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 .menu {
-  font-size: 28px;
+  font-size: 2rem;
   cursor: pointer;
 }
-.zone {
-  padding: 40px 20px;
-  text-align: center;
+.dropdown {
+  display: none;
+  flex-direction: column;
+  background: #111;
+}
+.dropdown.open {
+  display: flex;
+}
+.dropdown a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 1rem;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 1rem auto;
 }
 .grid button {
-  padding: 15px;
+  background: white;
+  color: black;
   border: none;
+  padding: 1rem;
   font-weight: bold;
   font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
 }
-.grid button.red {
-  background: #ff4444;
-  color: white;
+.cta-section {
+  text-align: center;
+  padding: 2rem;
 }
-.grid button.blue {
-  background: #4444ff;
-  color: white;
-}
-.signup-btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: gold;
+.cta-button {
+  background: #ffcc00;
   color: black;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
 }
 footer {
-  text-align: center;
-  padding: 20px;
   background: #000;
+  text-align: center;
+  padding: 1rem;
 }
