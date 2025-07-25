@@ -1,13 +1,62 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHITBALL Draft</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="PHITBALL Logo" class="logo">
+      <span class="title">PHITBALL</span>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav id="menu" class="menu">
+      <a href="https://walkina.substack.com" target="_blank">LILGREENBOOK</a>
+      <a href="https://www.ifiwere.xyz" target="_blank">IFIWERELLC</a>
+      <a href="https://www.Prime235.ai" target="_blank">GET WELLTHAI</a>
+      <a href="https://www.theSWE.co" target="_blank">SWE@XCHANGE</a>
+      <a href="https://www.stockTU.be" target="_blank">STOCKTUBE</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>TRILLZONE – Draft Your QB</h1>
+    <p>Choose your Quarterback from the top 9 stocks ($1T+). These are the Kings of the TRILLZONE. Your first pick sets the tone.</p>
+    <div class="grid">
+      <button>NVDA</button>
+      <button class="red">AAPL</button>
+      <button class="blue">MSFT</button>
+      <button>AMZN</button>
+      <button>GOOG</button>
+      <button>META</button>
+      <button>AVGO</button>
+      <button>BRK.B</button>
+      <button>TSLA</button>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Kicker & Defense</h2>
+    <p>After your QB, draft a Kicker (450B–1T) and a Defense (235–449B) to complete Day 1 of your roster.</p>
+    <a href="https://buy.stripe.com/5kQ6oGbAP1Lv7hrfKWcMM02" class="cta-button">Sign Up & Continue Draft</a>
+  </section>
+
+  <section class="field">
+    <h2>The Field – Scroll to the BILLZONE</h2>
+    <p>Draft your way downfield: QB at TRILLZONE, then K, Defense, RB, WR, TE, FLEX, Special Teams, Rookies, and finally the BILLZONE.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PHITBALL</p>
+  </footer>
+</body>
 </html>
